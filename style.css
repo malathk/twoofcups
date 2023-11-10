@@ -1,0 +1,193 @@
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    overflow-x: hidden;
+  }
+  
+  ::selection {
+    background: rgb(0, 60, 255);
+    /* WebKit/Blink Browsers */
+    color: white;
+  }
+  
+  ::-moz-selection {
+    background: rgb(0, 60, 255);
+    /* Gecko Browsers */
+    color: white;
+  }
+  
+  .overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+    opacity: 0.9;
+    mix-blend-mode: multiply;
+    z-index: 10;
+    pointer-events: none;
+  }
+  .overlay.two {
+    background-color: rgb(0, 60, 255);
+    opacity: 0.95;
+    mix-blend-mode: lighten;
+    z-index: 11;
+  }
+  
+  
+
+  main {
+    background-color: white;
+    z-index: 1;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: contrast(10);
+  }
+  
+  .design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    filter: blur(3px);
+    background: linear-gradient(129deg, #fff 0%, #c7c7c7 100%);
+    transition: filter 0.3s ease-in-out;
+  }
+  .design:hover {
+    filter: blur(1px);
+  }
+  .design h3 {
+    writing-mode: vertical-rl;
+    font-size: 1vw;
+  }
+  .design h3:first-child {
+    transform: rotate(180deg);
+  }
+  .design .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .design .center h1 {
+    font-size: 5vw;
+    margin-block: 0px;
+  }
+  .design .center .space-container {
+    display: flex;
+    width: 100%;
+  }
+  .design .center .space-container span {
+    font-size: 2vw;
+  }
+  .design .center .space-container hr {
+    border: none;
+    border-bottom: 3px solid black;
+    outline: none;
+    display: inline;
+    height: 0.6vw;
+    flex-grow: 1;
+    margin-left: 0.2vw;
+    margin-right: 0.2vw;
+  }
+  .design .center .oval {
+    border: 3px solid black;
+    padding: 0.4vw 1.4vw;
+    text-align: center;
+    border-radius: 50%;
+  }
+  .design .center .oval p {
+    margin-block: 0px;
+    text-transform: uppercase;
+  }
+  .design .center .square {
+    border: 3px solid black;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .design .center .square div {
+    font-size: 1.3vw;
+    font-weight: bold;
+  }
+  .design .center .square div p {
+    margin-block: 0px;
+    font-size: 0.7vw;
+  }
+  .design .center .footer {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .design .center .footer h2 {
+    margin-block: 0px;
+    font-size: 3vw;
+    font-weight: normal;
+  }
+  .design .center .footer h4 {
+    font-size: 2vw;
+    margin-block: 0px;
+  }
+  .design .center .footer p {
+    margin-block: 0px;
+  }
+
+
+  .bg {
+	perspective: 500px;	
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+    z-index: -1000;
+}
+
+#cupOne {
+    position: absolute;
+    top: 40%;
+    left: -1%;
+    transform: rotate(0deg);
+    transition: transform 0.7s linear;
+    animation: rotateAnimation 7s infinite linear;
+
+  }
+
+  #cupTwo {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: rotate(0deg);
+    transition: transform 0.7s linear;
+    animation: rotateAnimationTwo 7s infinite linear;
+
+  }
+
+
+  @keyframes rotateAnimation {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
+
+@keyframes rotateAnimationTwo {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
