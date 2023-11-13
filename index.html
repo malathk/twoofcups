@@ -3,6 +3,8 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕️</text></svg>">
+    <title>⋆˙⟡♡⟡⋆˙ two of cups </title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="styleOne.css">
     <meta charset="utf-8" />
@@ -12,7 +14,7 @@
 <div id="mainbg"></div>
     <div class="overlay two"></div>
     <div class="overlay"></div>
-    <main id="hello">
+    <main id="mainTab">
       <div class="design">
         <h3>
           RESOURCEFUL, HARMONY, SERENITY
@@ -32,11 +34,11 @@
             <span>STUDIO</span>
           </div>
           <div class="oval">
-            <p>BY TAYLOR PAYDOS</p>
+            <p>TAYLOR PAYDOS</p>
             <p>+ MALATH KAMALULDEEN</p>
           </div>
           <div class="square">
-            <div>ABOUT</div>
+            <div onclick="about()">ABOUT</div>
             <div>WORK + CV'S</div>
             <div>
              <p>*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧</p>
@@ -59,9 +61,82 @@
       </div>
     </main>
 
+  
+    <div id="aboutTab" style="display:none;">
+      <div class="design">
+        <h3>
+          *:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧
+        </h3>
+        <div class="center">
+          <h1>TWO OF CUPS</h1>
+          <div class="space-container">
+          
+          </div>
+          <div class="space-container">
+            <span>DESIGN</span>
+            <hr>
+            <span>STUDIO</span>
+          </div>
+          
+          <div class="square">
+          <p>Welcome to Two of Cups Studio, where our ethos is shaped by the intuitive and interconnected values drawn from the Two of Cups tarot card. As graduates from Parsons School of Design and creative technologists, Taylor and Malath infuse their work with a unique blend of artistic insight and technical proficiency.</p>
+          <div id="squareTwo">
+             Harmony and Unity
+             <br>
+             Balanced Design
+             <br>
+             Intuitive Collaboration
+             <br>
+             Environmental Consciousness
+        
+           </div>
+       <p>Taylor and Malath envision their collaboration with you as a metaphorical flow of water between cups. This fluidity represents the seamless exchange of ideas, creativity, and understanding that defines our partnership. Like water effortlessly filling and connecting two vessels, our creative process involves a harmonious transfer of insights, guided by intuition and a shared vision.</p>
+            <div>
+              <p>Taylor Paydos and Malath Kamaluldeen are longtime collaboraters. Taylor is currently a Digital Producer at The Phillips Auction House.  Malath previously was a Software Engineer at BofA and is currently freelancing. See their portfolios here and here. 
+              </p>
+             <p>*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧</p>
+            </div>
+          </div>
 
-     <script src="main.js">
-    </script>
+        
+
+          <div class="footer">
+            <h2>☕️</h2>
+            <div>
+              <h4>
+               CONTACT
+              </h4>
+              <p>Come Again Soon!</p>
+            </div>
+            <h2>☕️</h2>
+          </div>
+        </div>
+        <h3>
+          *:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧
+        </h3>
+      </div>
+   
+
+       
+    </div>
+  
+
+     <script src="main.js"></script>
     <script src="script.js"></script>
+    <script src="sccript.js"></script>
+
+    <script>
+       function about() {
+      var x = document.getElementById("mainTab");
+      var a = document.getElementById("aboutTab");
+
+      if (a.style.display === "none") {
+        x.style.display = "none";
+        a.style.display = "block";
+      } else {
+        a.style.display = "none";
+      }
+    }
+    </script>
   </body>
 </html>

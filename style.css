@@ -8,10 +8,22 @@ html, body {
     z-index: -1000;
   }
   
+  #aboutTab{
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    width: 50vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: contrast(1);
+  }
   
   main {
     z-index: 1000;
-   
+    display: none;
     position: absolute;
     top: 3%;
     z-index: 1;
@@ -20,7 +32,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: contrast(10);
+    filter: contrast(1);
   }
   
   .design {
@@ -119,6 +131,11 @@ html, body {
     margin-block: 0px;
   }
   
+  #squareTwo{
+    border: 3px solid rgb(203, 222, 251);
+    padding: 2%;
+  }
+ 
   
   .bg {
   perspective: 500px;	
