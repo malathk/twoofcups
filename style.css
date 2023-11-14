@@ -250,7 +250,7 @@ html, body {
   #aboutTab{
     display: none;
     position: absolute;
-    background-color: aliceblue;
+    
     top: 5%;
     left: 0%;
     width: 110vw;

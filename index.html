@@ -23,7 +23,7 @@
           INTUITIVE, UNITY, HARMONY
         </h3>
 
-        <h3>RESOURCEFUL, HARMONY, BALANCE</h3>
+        
 
         <div class="center">
           <h1>TWO OF CUPS</h1>
@@ -64,7 +64,6 @@
           PLAYFUL, BALANCED, SEXY
         </h3>
 
-        <h3>SEXY, PLAYFUL, IMAGINATIVE</h3>
 
       </div>
     </main>
@@ -73,7 +72,7 @@
       <div class="design">
         <h3>*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧*:･ﾟ✧</h3>
         <div class="center">
-          <h1>TWO OF CUPS</h1>
+          <h1 onclick="fun()">TWO OF CUPS</h1>
           <div class="space-container"></div>
           <div class="space-container">
             <span>DESIGN</span>
@@ -136,6 +135,20 @@
           a.style.display = "none";
         }
       }
+
+      function fun() {
+        var x = document.getElementById("mainTab");
+        var a = document.getElementById("aboutTab");
+
+        if (x.style.display === "none") {
+          a.style.display = "none";
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+
     </script>
   </body>
 </html>
