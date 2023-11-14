@@ -175,9 +175,10 @@ html, body {
   height: 100vh;
     z-index: -1000;
   }
+  
 
 
-  @media only screen and (max-device-width: 2000px){
+  @media only screen and (max-device-width: 5000px){
 
    body{
     background-color: red;
@@ -192,6 +193,8 @@ html, body {
     text-align: center;
     border-radius: 50%;
   }
+
+ 
 
    main{
     top: -5%;
@@ -249,8 +252,9 @@ html, body {
   #aboutTab{
     display: none;
     position: absolute;
+    background-color: aliceblue;
     top: 5%;
-    left: -5%;
+    left: 0%;
     width: 110vw;
     overflow: scroll;
     height: 60vw;
