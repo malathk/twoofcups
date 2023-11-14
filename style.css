@@ -1,7 +1,18 @@
+@font-face {
+  font-family: nyghtSerif;
+  src: url(fonts/NyghtSerif-Medium.woff2);
+}
+
+@font-face {
+  font-family: nyghtSerifItalic;
+  src: url(fonts/NyghtSerif-Medium.woff2);
+}
+
 html, body {
+   font-family: nyghtSerif;
     margin: 0;
     padding: 0;
-    background-color: rgb(238, 231, 200);
+    background-color: rgb(232, 222, 208);
   }
   canvas {
     display: block;
@@ -9,11 +20,14 @@ html, body {
   }
   
   #aboutTab{
+    font-family: nyghtSerif;
     display: none;
     position: absolute;
-    top: 15%;
-    left: 25%;
-    width: 50vw;
+    top: 5%;
+    left: 10%;
+    width: 80vw;
+    height:10%;
+    overflow: scroll;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -49,7 +63,7 @@ html, body {
   }
   .design h3 {
     writing-mode: vertical-rl;
-    font-size: 1vw;
+    font-size: 2vw;
   }
   .design h3:first-child {
     transform: rotate(180deg);
@@ -60,7 +74,8 @@ html, body {
     align-items: center;
   }
   .design .center h1 {
-    font-size: 5vw;
+    font-family: nyghtSerifItalic;
+    font-size: 6vw;
     margin-block: 0px;
   }
   .design .center .space-container {
@@ -68,11 +83,11 @@ html, body {
     width: 100%;
   }
   .design .center .space-container span {
-    font-size: 2vw;
+    font-size: 3vw;
   }
   .design .center .space-container hr {
     border: none;
-    border-bottom: 3px solid rgb(203, 222, 251);
+    border-bottom: 3px solid rgb(72, 54, 135);
     outline: none;
     display: inline;
     height: 0.6vw;
@@ -80,18 +95,29 @@ html, body {
     margin-left: 0.2vw;
     margin-right: 0.2vw;
   }
+
+  p{
+    font-size: 2vw;
+  }
+
   .design .center .oval {
-    border: 3px solid rgb(203, 222, 251);
-    padding: 0.4vw 1.4vw;
+    border: 3px solid rgb(72, 54, 135);
+    /*background-image: url(imgs/db4fjld-7c04adef-021f-4163-9681-c2848d291765.gif);
+    background-size: cover !important;*/
+    background: cover;
+    padding: 2.4vw 2.4vw;
     text-align: center;
     border-radius: 50%;
+  }
+  .oval{
+    padding: 3%;
   }
   .design .center .oval p {
     margin-block: 0px;
     text-transform: uppercase;
   }
   .design .center .square {
-    border: 3px solid rgb(203, 222, 251);
+    border: 3px solid rgb(72, 54, 135);
     margin-top: 10px;
     width: 100%;
     box-sizing: border-box;
@@ -100,14 +126,16 @@ html, body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    /*background-image: url(imgs/db4fjld-7c04adef-021f-4163-9681-c2848d291765.gif);
+    background-size: cover !important;*/
   }
   .design .center .square div {
-    font-size: 1.3vw;
+    font-size: 2.3vw;
     font-weight: bold;
   }
   .design .center .square div p {
     margin-block: 0px;
-    font-size: 0.7vw;
+    font-size: 2.7vw;
   }
   .design .center .footer {
     width: 100%;
@@ -119,12 +147,12 @@ html, body {
   }
   .design .center .footer h2 {
     margin-block: 0px;
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: normal;
   }
   
   .design .center .footer h4 {
-    font-size: 2vw;
+    font-size: 3vw;
     margin-block: 0px;
   }
   .design .center .footer p {
@@ -149,14 +177,24 @@ html, body {
   }
 
 
-  @media only screen and (max-device-width: 2800px){
+  @media only screen and (max-device-width: 2000px){
 
    body{
     background-color: red;
    }
 
+   .design .center .oval {
+    border: 3px solid rgb(72, 54, 135);
+    /*background-image: url(imgs/db4fjld-7c04adef-021f-4163-9681-c2848d291765.gif);
+    background-size: cover !important;*/
+    background: cover;
+    padding: 5.4vw 5.8vw;
+    text-align: center;
+    border-radius: 50%;
+  }
+
    main{
-    top: 0%;
+    top: -5%;
     left: 10%;
     width: 80vw;
     min-height: 100vh;
@@ -175,7 +213,8 @@ html, body {
   }
 
   .design .center h1 {
-    font-size: 10vw;
+    text-align: center;
+    font-size: 15vw;
     margin-block: 0px;
   }
 
