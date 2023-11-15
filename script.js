@@ -15,7 +15,7 @@ function setup() {
 
 function draw() {
   // frameRate(4);
-  background(25,2,2,0);
+  background(0,0,0,0);
   noFill();
   // stroke('blue');
   // strokeWeight(2);
