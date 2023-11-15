@@ -155,7 +155,7 @@ a:hover {
   margin-block: 0px;
   text-transform: uppercase;
 }
-.design .center .square {
+.design .center .squaree {
   border: 3px solid rgb(72, 54, 135);
   margin-top: 10px;
   width: 100%;
@@ -168,11 +168,11 @@ a:hover {
   /*background-image: url(imgs/db4fjld-7c04adef-021f-4163-9681-c2848d291765.gif);
     background-size: cover !important;*/
 }
-.design .center .square div {
+.design .center .squaree div {
   font-size: 2.3vw;
   font-weight: bold;
 }
-.design .center .square div p {
+.design .center .squaree div p {
   margin-block: 0px;
   font-size: 2.7vw;
 }
@@ -198,7 +198,7 @@ a:hover {
   margin-block: 0px;
 }
 
-#squareRawr {
+#squareeRawr {
   border: 3px solid rgb(203, 222, 251);
   padding: 2%;
 }
@@ -276,7 +276,7 @@ a:hover {
     margin-block: 0px;
   }
 
-  .design .center .square div {
+  .design .center .squaree div {
     font-size: 5vw;
     font-weight: bold;
   }
