@@ -7,7 +7,10 @@
   font-family: nyghtSerifItalic;
   src: url(fonts/NyghtSerif-Medium.woff2);
 }
-
+@font-face {
+  font-family: squarevetica-regular;
+  src: url(fonts/squarevetica-regular.otf);
+}
 html,
 body {
   font-family: nyghtSerif;
@@ -20,6 +23,7 @@ body {
 canvas {
   display: block;
   z-index: -1000;
+  backround-color: rgb(0, 0, 0, 0);
 }
 
 #aboutTab {
@@ -214,6 +218,10 @@ a:hover {
 }
 
 @media only screen and (max-device-width: 500px) {
+  html,
+  body {
+    font-family: squarevetica-regular;
+  }
   .design .center .oval {
     border: 3px solid rgb(72, 54, 135);
     font-size: 3vw;
@@ -246,6 +254,7 @@ a:hover {
   }
 
   .design .center h1 {
+    font-family: squarevetica-regular;
     text-align: center;
     font-size: 15vw;
     margin-block: 0px;
