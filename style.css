@@ -43,7 +43,7 @@ main {
   z-index: 1000;
   display: none;
   position: absolute;
-  top: 3%;
+  top: 1%;
   z-index: 1;
   width: 100vw;
   min-height: 100vh;
@@ -79,15 +79,15 @@ main {
 }
 .design .center h1 {
   font-family: nyghtSerifItalic;
-  font-size: 6vw;
+  font-size: 4vw;
   margin-block: 0px;
 }
 .design .center .space-container {
   display: flex;
-  width: 70%;
+  width: 100%;
 }
 .design .center .space-container span {
-  font-size: 3vw;
+  font-size: 2vw;
 }
 .design .center .space-container hr {
   border: none;
@@ -107,6 +107,7 @@ p {
 a {
   border-bottom: 0.2px solid #453886;
   color: #453886;
+  font-size: 2vw;
   padding-bottom: 0.25em;
   text-decoration: none;
 }
@@ -144,7 +145,7 @@ a:hover {
   /*background-image: url(imgs/db4fjld-7c04adef-021f-4163-9681-c2848d291765.gif);
     background-size: cover !important;*/
   background: cover;
-  padding: 9.4vw 9.4vw;
+  padding: 6.4vw 6.4vw;
   text-align: center;
   border-radius: 90%;
 }
@@ -174,7 +175,7 @@ a:hover {
 }
 .design .center .squaree div p {
   margin-block: 0px;
-  font-size: 2.7vw;
+  font-size: 1.7vw;
 }
 .design .center .footer {
   width: 100%;
@@ -186,12 +187,12 @@ a:hover {
 }
 .design .center .footer h2 {
   margin-block: 0px;
-  font-size: 8vw;
+  font-size: 3vw;
   font-weight: normal;
 }
 
 .design .center .footer h4 {
-  font-size: 3vw;
+  font-size: 2vw;
   margin-block: 0px;
 }
 .design .center .footer p {
@@ -241,7 +242,7 @@ a:hover {
 
   .design .center .oval {
     border: 3px solid rgb(72, 54, 135);
-    font-size: 3vw;
+    font-size: 2vw;
     /*background-image: url(imgs/db4fjld-7c04adef-021f-4163-9681-c2848d291765.gif);
     background-size: cover !important;*/
     background: cover;
@@ -292,7 +293,7 @@ a:hover {
     margin-block: 0px;
   }
   .design .center .space-container span {
-    font-size: 5vw;
+    font-size: 10vw;
   }
 
   p {
