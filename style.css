@@ -11,9 +11,11 @@
 html,
 body {
   font-family: nyghtSerif;
+  color: rgb(41, 28, 22);
   margin: 0;
   padding: 0;
-  background-color: rgb(232, 222, 208);
+  background-color: rgb(239, 237, 234);
+  /* rgb(232, 222, 208) */
 }
 canvas {
   display: block;
@@ -23,6 +25,7 @@ canvas {
 #aboutTab {
   font-family: nyghtSerif;
   display: none;
+  color: rgb(41, 28, 22);
   position: absolute;
   top: 5%;
   left: 10%;
@@ -55,7 +58,7 @@ main {
   justify-content: center;
   align-items: center;
   position: relative;
-  filter: blur(2px);
+  filter: blur(90px);
 
   transition: filter 0.3s ease-in-out;
 }
@@ -117,6 +120,25 @@ a:hover {
   padding-bottom: 0.3em;
   text-decoration: none;
 }
+
+.page-hover:hover {
+  animation: about-hover 3s cubic-bezier(0.61, 1, 0.88, 1) 0ms infinite normal
+    none;
+}
+@keyframes about-hover {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .design .center .oval {
   border: 3px solid rgb(72, 54, 135);
   /*background-image: url(imgs/db4fjld-7c04adef-021f-4163-9681-c2848d291765.gif);
@@ -164,7 +186,7 @@ a:hover {
 }
 .design .center .footer h2 {
   margin-block: 0px;
-  font-size: 2vw;
+  font-size: 8vw;
   font-weight: normal;
 }
 
@@ -194,6 +216,7 @@ a:hover {
 @media only screen and (max-device-width: 500px) {
   .design .center .oval {
     border: 3px solid rgb(72, 54, 135);
+    font-size: 3vw;
     /*background-image: url(imgs/db4fjld-7c04adef-021f-4163-9681-c2848d291765.gif);
     background-size: cover !important;*/
     background: cover;
@@ -211,6 +234,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     filter: contrast(1);
+    filter: blur(0px);
   }
 
   .design {
@@ -234,7 +258,7 @@ a:hover {
 
   .design .center .footer h2 {
     margin-block: 0px;
-    font-size: 5vw;
+    font-size: 8vw;
     font-weight: normal;
   }
 
@@ -269,5 +293,6 @@ a:hover {
     justify-content: center;
     align-items: center;
     filter: contrast(1);
+    filter: blur(0px);
   }
 }
